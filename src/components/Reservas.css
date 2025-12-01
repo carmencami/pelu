@@ -1,0 +1,178 @@
+.reservas {
+  background-color: var(--color-blanco);
+}
+
+.confirmacion-mensaje {
+  background-color: var(--color-verde);
+  color: var(--color-blanco);
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.reservas-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.reserva-form {
+  background-color: var(--color-arena);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: var(--sombra);
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--color-texto);
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  transition: var(--transicion);
+  background-color: var(--color-blanco);
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--color-caldera);
+}
+
+.form-group input.error,
+.form-group select.error {
+  border-color: #e74c3c;
+}
+
+.error-mensaje {
+  display: block;
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 5px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.reservas-lista {
+  background-color: var(--color-arena);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: var(--sombra);
+  height: fit-content;
+}
+
+.reservas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.reservas-header h3 {
+  color: var(--color-caldera);
+  font-size: 1.5rem;
+}
+
+.reservas-items {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.reserva-item {
+  background-color: var(--color-blanco);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.reserva-info h4 {
+  color: var(--color-caldera);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.reserva-info p {
+  margin-bottom: 5px;
+  color: var(--color-texto-claro);
+  font-size: 0.95rem;
+}
+
+.reserva-info strong {
+  color: var(--color-texto);
+}
+
+.sin-reservas {
+  text-align: center;
+  color: var(--color-texto-claro);
+  padding: 20px;
+  font-style: italic;
+}
+
+/* Scrollbar personalizado */
+.reservas-items::-webkit-scrollbar {
+  width: 8px;
+}
+
+.reservas-items::-webkit-scrollbar-track {
+  background: var(--color-arena);
+  border-radius: 10px;
+}
+
+.reservas-items::-webkit-scrollbar-thumb {
+  background: var(--color-caldera);
+  border-radius: 10px;
+}
+
+.reservas-items::-webkit-scrollbar-thumb:hover {
+  background: #b05a2a;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .reservas-content {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .reserva-form {
+    padding: 25px;
+  }
+
+  .reservas-lista {
+    padding: 20px;
+  }
+}
+
